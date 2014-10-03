@@ -247,3 +247,10 @@
   padding: 0;
   color: #31708f;
 }
+
+/* Avatars */
+.ui-avatar {
+  display: inline-block;
+  border-radius: 50%;
+}
+  .ui-avatar img {border-radius: 50%;}
