@@ -240,8 +240,11 @@
     font-weight: 700;
     line-height: 18px;
     margin-bottom: 10px;
-    color: #1a1a1a;
   }
+    .ui-card_name a {
+      text-decoration: none;
+      color: #1a1a1a;
+    }
   .ui-card_description {
     font-size: 12px;
     line-height: 18px;
@@ -316,3 +319,22 @@
   border-radius: 50%;
 }
   .ui-avatar img {border-radius: 50%;}
+
+/* Profile button */
+.ui-profile-btn {
+  font-size: 12px;
+  line-height: 35px;
+  position: absolute;
+  top: 1px;
+  right: 0;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 35px;
+  padding: 0 55px;
+  text-decoration: none;
+  color: #14508c;
+  border: 1px solid #14508c;
+  border-radius: 5px;
+}
