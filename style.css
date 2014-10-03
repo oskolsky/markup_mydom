@@ -205,18 +205,24 @@
 
 /* CARD LIST */
 .ui-cards {
-  width: 100%;
+  width: 100%;  
   padding: 0;
   border-collapse: collapse;
 }
 
   .ui-card {
     width: 50%;
-    border: 1px solid #ccc;    
+    border: 1px solid #ccc;
   }
   .ui-card__notice {
     padding-top: 20px;
   }
+    .ui-cards_title {
+      font-size: 16px;
+      line-height: 18px;
+      color: #2772ba;
+      padding: 0 0 15px 25px;
+    }
     .ui-card_inner {
       position: relative;
       padding: 20px 140px 20px 20px;
