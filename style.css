@@ -1,3 +1,8 @@
+/* GLOBAL CLASS */
+.page-wrapper {
+  margin-bottom: -43px;
+}
+
 /* HELPERS CLASS */
 .cf::after {
   display: table;
@@ -205,74 +210,88 @@
 
 /* CARD LIST */
 .ui-cards {
-  width: 100%;  
-  padding: 0;
-  border-collapse: collapse;
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;  
 }
-
-  .ui-card {
-    width: 50%;
+.ui-cards:last-child {
+  margin-left: -1px;
+}
+  .ui-cards_inner {
     border: 1px solid #ccc;
   }
-  .ui-card__notice {
-    padding-top: 20px;
-  }
-    .ui-cards_title {
-      font-size: 16px;
-      line-height: 18px;
-      color: #2772ba;
-      padding: 0 0 15px 25px;
-    }
-    .ui-card_inner {
-      position: relative;
-      padding: 20px 140px 20px 20px;
-    }
+    .ui-card {
 
-  /* Elements card item */
-  .ui-card_type {
-    font-size: 12px;
-    line-height: 20px;
-    position: absolute;
-    top: -20px;
-    left: -1px;
-    height: 20px;
-    padding: 0 20px;
-    color: #1a1a1a;
-    background-color: #eee;
-  }
-  .ui-card_name {
-    font-family: Tahoma, Geneva, sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 18px;
-    margin-bottom: 10px;
-  }
-    .ui-card_name a {
-      text-decoration: none;
-      color: #1a1a1a;
     }
-  .ui-card_description {
-    font-size: 12px;
-    line-height: 18px;
-    margin-bottom: 15px;
-    color: #666;
-  }
-  .ui-card_action {
-    line-height: 24px;
-    display: inline-block;
-    height: 24px;
-    padding: 0 15px;
-    color: #fff;
-    border-radius: 5px;
-    background-color: #f8b742;
-    font-size: 12px;
-    text-decoration: none;
-  }
-  .ui-card_avatar {
-    position: absolute;
-    top: 25px;
-    right: 30px;
-  }
+    .ui-card:not(:last-child) {
+      border-bottom: 1px solid #ccc;
+    }
+    .ui-card__notice {
+      padding-top: 20px;
+    }
+    .ui-cards__connection {
+
+    }
+    .ui-cards__connection .ui-cards_inner {
+      overflow-y: auto;
+    }
+      .ui-cards_title {
+        font-size: 16px;
+        line-height: 18px;
+        color: #2772ba;
+        padding: 0 0 15px 25px;
+      }
+      .ui-card_inner {
+        position: relative;
+        -webkit-box-sizing: border-box;
+           -moz-box-sizing: border-box;
+                box-sizing: border-box;
+        padding: 20px 140px 20px 20px;
+      }
+      .ui-card_type {
+        font-size: 12px;
+        line-height: 20px;
+        position: absolute;
+        top: -20px;
+        left: 0px;
+        height: 20px;
+        padding: 0 20px;
+        color: #1a1a1a;
+        background-color: #eee;
+      }
+      .ui-card_name {
+        font-family: Tahoma, Geneva, sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 18px;
+        margin-bottom: 10px;
+      }
+        .ui-card_name a {
+          text-decoration: none;
+          color: #1a1a1a;
+        }
+      .ui-card_description {
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom: 15px;
+        color: #666;
+      }
+      .ui-card_action {
+        line-height: 24px;
+        display: inline-block;
+        height: 24px;
+        padding: 0 15px;
+        color: #fff;
+        border-radius: 5px;
+        background-color: #f8b742;
+        font-size: 12px;
+        text-decoration: none;
+      }
+      .ui-card_avatar {
+        position: absolute;
+        top: 25px;
+        right: 30px;
+      }
 
 /* ELEMENTS */
 
@@ -332,7 +351,7 @@
   line-height: 35px;
   position: absolute;
   top: 1px;
-  right: 0;
+  right: 16px;
   display: inline-block;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -343,4 +362,8 @@
   color: #14508c;
   border: 1px solid #14508c;
   border-radius: 5px;
+}
+
+/* Footer */
+#footer {
 }
