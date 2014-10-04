@@ -186,8 +186,11 @@
   .ui-form_btn {
     font-size: 16px !important;
     font-weight: 700 !important;
+    line-height: 50px !important;
     height: 50px !important;
     padding: 0 60px !important;
+    text-align: center !important;
+    text-decoration: none !important;
     color: #fff !important;
     border: none !important;
     border-radius: 5px !important;
@@ -198,6 +201,12 @@
             box-sizing: border-box;
   }
   .ui-form_btn:active {
+    text-shadow: none !important;
+  }
+  .ui-form_btn__transparent {
+    color: #14508c !important;
+    border: 1px solid #14508c !important;
+    background: #fff !important;
     text-shadow: none !important;
   }
 
@@ -293,6 +302,179 @@
         right: 30px;
       }
 
+/* DIALOGS */
+.ui-dialog {
+  position: relative;
+  width: 780px;
+  padding: 60px 0;
+  border-radius: 20px;
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+  .ui-dialog_close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+/* PROFILE DIALOG */
+.ui-profile {
+
+}
+  .ui-profile_header {
+    padding: 0 100px;
+    text-align: center;
+  }
+    .ui-profile_avatar {
+      margin-bottom: 25px;
+    }
+    .ui-profile_name {
+      font-family: Tahoma, Geneva, sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 18px;
+      margin-bottom: 15px;
+      color: #1a1a1a;
+    }
+    .ui-profile_description {
+      font-size: 14px;
+      line-height: 20px;
+      color: #666;
+    }
+  .ui-profile_hr {
+    margin: 40px 0;
+  }
+  .ui-profile_tx {    
+    padding: 0 100px;
+    color: #1a1a1a;
+  }
+    .ui-profile_tx p {
+      line-height: 20px !important;
+    }
+  .owl-carousel__photo {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+    .owl-carousel__photo .owl-controls {
+
+    }
+      .owl-carousel__photo .owl-controls .owl-buttons {
+
+      }
+        .owl-carousel__photo .owl-controls .owl-buttons .owl-prev,
+        .owl-carousel__photo .owl-controls .owl-buttons .owl-next {
+          position: absolute;
+          top: 50%;
+          width: 12px;
+          height: 20px;
+          background-repeat: no-repeat;
+          background-position: center;
+          -webkit-transform: translateY(-50%);
+             -moz-transform: translateY(-50%);
+                  transform: translateY(-50%);
+        }
+        .owl-carousel__photo .owl-controls .owl-buttons .owl-prev {
+          left: 130px;
+          background-image: url(../images/chevron-left.png);
+        }
+        .owl-carousel__photo .owl-controls .owl-buttons .owl-next {
+          right: 130px;
+          background-image: url(../images/chevron-right.png);
+        }
+  .ui-profile_friends {
+    margin-bottom: 40px;
+    padding: 40px 120px 50px;
+    text-align: center;
+    background-color: #eee;
+  }
+    .ui-profile_friends_title {
+      font-size: 24px;
+      line-height: 18px;
+      position: relative;
+      display: inline-block;
+      margin-bottom: 35px;
+      color: #2772ba;
+    }
+      .ui-profile_friends_count {
+        font-size: 11px;
+        line-height: 23px;
+        position: absolute;
+        top: -20px;
+        right: -35px;
+        height: 23px;
+        padding: 0 10px;
+        color: #fff;
+        border-radius: 10px;
+        background-color: #2772ba;
+      }
+    .ui-profile_friends_avatar {
+      margin-bottom: 5px;
+    }
+    .ui-profile_friends_name {
+      font-size: 12px;
+      line-height: 18px;      
+    }
+      .ui-profile_friends_name a {
+        color: #1a1a1a;
+        text-decoration: none;
+      }
+    .owl-carousel__friends {
+
+    }
+      .owl-carousel__friends .owl-controls {
+
+      }
+        .owl-carousel__friends .owl-controls .owl-buttons {
+
+        }
+          .owl-carousel__friends .owl-controls .owl-buttons .owl-prev,
+          .owl-carousel__friends .owl-controls .owl-buttons .owl-next {
+            position: absolute;
+            top: 50%;
+            width: 12px;
+            height: 20px;
+            background-repeat: no-repeat;
+            background-position: center;
+            -webkit-transform: translateY(-50%);
+               -moz-transform: translateY(-50%);
+                    transform: translateY(-50%);
+          }
+          .owl-carousel__friends .owl-controls .owl-buttons .owl-prev {
+            left: -55px;
+            background-image: url(../images/chevron-left.png);
+          }
+          .owl-carousel__friends .owl-controls .owl-buttons .owl-next {
+            right: -55px;
+            background-image: url(../images/chevron-right.png);
+          }
+        .owl-carousel__friends .owl-controls .owl-pagination {
+          position: absolute;
+          bottom: -35px;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+             -moz-transform: translateX(-50%);
+                  transform: translateX(-50%);         
+        }
+          .owl-carousel__friends .owl-controls .owl-pagination .owl-page {
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            margin: 0 4px;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            background-color: #fff;
+          }
+          .owl-carousel__friends .owl-controls .owl-pagination .owl-page.active {
+            border-color: #9b9b9b;
+            background-color: transparent;
+          }
+  .ui-profile_footer {
+    padding: 0 100px;
+  }
+
+
 /* ELEMENTS */
 
 /* Add child */
@@ -324,7 +506,7 @@
     width: 16px;
     height: 16px;
     content: '';
-    background-image: url(images/i.png);
+    background-image: url(../images/i.png);
     background-repeat: no-repeat;
     background-position: center;
     -webkit-transform: translateY(-50%);
@@ -362,8 +544,4 @@
   color: #14508c;
   border: 1px solid #14508c;
   border-radius: 5px;
-}
-
-/* Footer */
-#footer {
 }
