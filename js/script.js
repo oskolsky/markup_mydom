@@ -63,6 +63,22 @@ $(function() {
 
   setHeightInnerCards();
 
+  //
+  // .. Upload avatars
+  //
+  $('.js-upload').click(function() {
+    $(this).closest('.ui-form_upload').find('.js-upload-file').trigger('click');
+    return false;
+  });
+
+  //
+  // .. Tags init
+  // .. https://github.com/xoxco/jQuery-Tags-Input
+  //
+  $('#tags').tagsInput({
+    defaultText: ''
+  });
+
 });
 
 
