@@ -79,6 +79,15 @@ $(function() {
     defaultText: ''
   });
 
+  //
+  // .. Add children
+  //
+  $('.js-add-child').click(function() {
+    var tpl = $('.js-child-form').html();
+    $('.js-child-container').append(tpl);
+    return false;
+  });
+
 });
 
 

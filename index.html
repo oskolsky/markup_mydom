@@ -210,32 +210,38 @@
 
             <fieldset class="ui-form_fieldset ui-form_fieldset__bg mb-2">
               <p class="ui-form_legend">Дети</p>
-              <div class="grid">
-                <div class="grid_i grid_i__1-3 va-m">
-                  <label class="ui-form_el ui-form_el__block ui-form_label">Имя</label>
-                  <input type="text" class="ui-form_el ui-form_el__block ui-form_tx">
-                </div><div class="grid_i grid_i__1-3 va-m">
-                  <label class="ui-form_el ui-form_el__block ui-form_label">Дата рождения</label>
-                  <select class="ui-form_el ui-form_select ui-form_select__day">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                  </select><!--
-                  --><select class="ui-form_el ui-form_select ui-form_select__month">
-                    <option>Январь</option>
-                    <option>Февраль</option>
-                    <option>Март</option>
-                  </select><!--
-                  --><select class="ui-form_el ui-form_select ui-form_select__year">
-                    <option>2014</option>
-                    <option>2013</option>
-                    <option>2012</option>
-                  </select>
-                </div><div class="grid_i grid_i__1-3 va-m">
-                  <label class="ui-form_el ui-form_el__block ui-form_label">Пол</label>
-                  <label class="ui-form_el ui-form_label ui-form_label__radio"><input type="radio" name="gander"> Девочка</label>
-                  <label class="ui-form_el ui-form_label ui-form_label__radio"><input type="radio" name="gander"> Мальчик</label>
-                </div>                
+              <div class="js-child-container">
+                <div class="js-child-form">
+                  <div class="mb-2">
+                    <div class="grid">
+                      <div class="grid_i grid_i__1-3 va-m">
+                        <label class="ui-form_el ui-form_el__block ui-form_label">Имя</label>
+                        <input type="text" class="ui-form_el ui-form_el__block ui-form_tx">
+                      </div><div class="grid_i grid_i__1-3 va-m">
+                        <label class="ui-form_el ui-form_el__block ui-form_label">Дата рождения</label>
+                        <select class="ui-form_el ui-form_select ui-form_select__day">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                        </select><!--
+                        --><select class="ui-form_el ui-form_select ui-form_select__month">
+                          <option>Январь</option>
+                          <option>Февраль</option>
+                          <option>Март</option>
+                        </select><!--
+                        --><select class="ui-form_el ui-form_select ui-form_select__year">
+                          <option>2014</option>
+                          <option>2013</option>
+                          <option>2012</option>
+                        </select>
+                      </div><div class="grid_i grid_i__1-3 va-m">
+                        <label class="ui-form_el ui-form_el__block ui-form_label">Пол</label>
+                        <label class="ui-form_el ui-form_label ui-form_label__radio"><input type="radio" name="gander"> Девочка</label>
+                        <label class="ui-form_el ui-form_label ui-form_label__radio"><input type="radio" name="gander"> Мальчик</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <a href="#" class="ui-add-child js-add-child">
                 <img src="images/add.png" width="16" height="16" alt="Добавить ребёнка">
