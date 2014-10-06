@@ -209,6 +209,12 @@
     background: #fff !important;
     text-shadow: none !important;
   }
+  .ui-form_btn__red {
+    background: #b50404 !important;
+  }
+  .ui-form_btn__green {
+    background: #0a7905 !important;
+  }
 
   /* Error */
   .ui-form_error {
