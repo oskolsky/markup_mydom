@@ -270,15 +270,21 @@
     .ui-upload-file-list {
       list-style: none;
     }
-      .ui-upload-file-list li {
+      .ui-upload-file-list_i {
+        position: relative;
         display: inline-block;
         vertical-align: top;
         margin-bottom: 13px;
       }
-      .ui-upload-file-list li:not(:last-child) {
+      .ui-upload-file-list_i:not(:last-child) {
         margin-right: 10px;
       }
-        .ui-upload-file-list li img {
+        .ui-upload-file-list_i_remove {
+          position: absolute;
+          top: 5px;
+          right: 5px;
+        }
+        .ui-upload-file-list_i img {
           vertical-align: top;
         }
 
