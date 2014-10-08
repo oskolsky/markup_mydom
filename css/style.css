@@ -38,6 +38,7 @@
 
 /* ALIGN */
 .va-m {vertical-align: middle !important;}
+.va-b {vertical-align: bottom !important;}
 
 /* GRID */
 .grid {
@@ -616,3 +617,24 @@
   border: 1px solid #14508c;
   border-radius: 5px;
 }
+
+/* Gander child block */
+.gander-child-block {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+  .gander-child-block label {
+    position: relative;
+    z-index: 2;
+  }
+  .gander-child-block img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    margin-top: -10px;
+    -webkit-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
